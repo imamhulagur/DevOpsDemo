@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>DevOps Demo project</title>
+</head>
+<body>
+
+<%
+String str1 = request.getParameter("s1");
+String str2 = request.getParameter("s2");
+if(str1.equalsIgnoreCase("devops") && str2.equals("devops"))
+{
+    out.println("<h3>Thankyou, you are VALID user</h3>");
+}
+else{
+    out.println("<h3>Sorry, you not a VALID user</h3>");
+}
+
+%>
+</body>
+</html>
